@@ -1,11 +1,14 @@
 import mongoose from "mongoose";
 
 const ExperienceSchema = new mongoose.Schema({
-  jobTitle: { type: String, required: true },
-  company: { type: String, required: true },
-  startYear: { type: Number, required: true },
-  endYear: { type: Number },
-  description: { type: String },
+  role: { type: String, required: true },
+  companyName: { type: String, required: true },
+  technology: { type: String, required: true },
+  start_date: { type: String, required: true },
+  end_date: { type: String, required: false },
+  project: { type: String, required: false },
+  client: { type: String, required: false },
+  projectDescription: { type: Array, required: false },
 });
 
 const Experience = mongoose.model("Experience", ExperienceSchema);

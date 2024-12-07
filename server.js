@@ -4,6 +4,7 @@ import bodyParser from "body-parser";
 import dotenv from "dotenv";
 
 import educationRoutes from "./routes/education.js";
+import experienceRoutes from "./routes/experience.js";
 
 dotenv.config();
 
@@ -15,8 +16,9 @@ app.use(bodyParser.json());
 
 // Routes
 app.use("/api/education", educationRoutes);
+app.use("/api/experience", experienceRoutes);
 
-console.log("process.env.MONGO_URI", process.env.MONGO_URI)
+console.log("process.env.MONGO_URI", process.env.MONGO_URI);
 
 // Connect to MongoDB
 mongoose
