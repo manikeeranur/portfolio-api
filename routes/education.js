@@ -5,9 +5,9 @@ const router = express.Router();
 
 // Create a new education entry
 router.post("/", async (req, res) => {
-  const { degree, institution, yearOfGraduation } = req.body;
+  const { degree, institute, year, percentage } = req.body;
 
-  const newEducation = new Education({ degree, institution, yearOfGraduation });
+  const newEducation = new Education({ degree, institute, year, percentage });
 
   try {
     const savedEducation = await newEducation.save();
