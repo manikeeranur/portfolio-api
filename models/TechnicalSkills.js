@@ -5,6 +5,9 @@ const TechnicalSkillsSchema = new mongoose.Schema({
   value: { type: String, required: true },
 });
 
-const TechnicalSkills = mongoose.model("Education", TechnicalSkillsSchema);
+const TechnicalSkills = mongoose.model(
+  "TechnicalSkills",
+  TechnicalSkillsSchema
+);
 
 export default TechnicalSkills;
