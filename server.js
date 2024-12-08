@@ -7,6 +7,7 @@ import educationRoutes from "./routes/education.js";
 import experienceRoutes from "./routes/experience.js";
 import technicalSkillsRoutes from "./routes/technicalSkills.js";
 import personalDetailsRoutes from "./routes/personalDetails.js";
+import skillsRoutes from "./routes/skills.js";
 
 dotenv.config();
 
@@ -21,6 +22,7 @@ app.use("/api/education", educationRoutes);
 app.use("/api/experience", experienceRoutes);
 app.use("/api/technicalSkills", technicalSkillsRoutes);
 app.use("/api/personalDetails", personalDetailsRoutes);
+app.use("/api/skills", skillsRoutes);
 
 console.log("process.env.MONGO_URI", process.env.MONGO_URI);
 
