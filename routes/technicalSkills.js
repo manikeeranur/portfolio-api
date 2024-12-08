@@ -52,7 +52,7 @@ router.put("/:id", async (req, res) => {
 
 router.delete("/:id", async (req, res) => {
   try {
-    await Experience.findByIdAndDelete(req.params.id);
+    await TechnicalSkills.findByIdAndDelete(req.params.id);
     res.status(200).json({ message: "TechnicalSkills entry deleted" });
   } catch (err) {
     res.status(400).json({ message: err.message });
