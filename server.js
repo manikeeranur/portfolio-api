@@ -20,7 +20,7 @@ app.use(bodyParser.json());
 app.use("/api/education", educationRoutes);
 app.use("/api/experience", experienceRoutes);
 app.use("/api/technicalSkills", technicalSkillsRoutes);
-app.use("/api/PersonalDetails", PersonalDetailsRoutes);
+app.use("/api/personalDetails", PersonalDetailsRoutes);
 
 console.log("process.env.MONGO_URI", process.env.MONGO_URI);
 
